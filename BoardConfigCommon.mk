@@ -141,54 +141,6 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
 TARGET_RECOVERY_FSTAB := device/samsung/afyonlte-common/rootdir/fstab.qcom
 
-# SELinux
-BOARD_SEPOLICY_DIRS += \
-    device/samsung/afyonlte-common/sepolicy
-
-BOARD_SEPOLICY_UNION += \
-	adbd.te \
-	app.te \
-	bluetooth_loader.te \
-	bridge.te \
-	camera.te \
-	device.te \
-	dhcp.te \
-	dnsmasq.te \
-	domain.te \
-	drmserver.te \
-	file_contexts \
-	file.te \
-	hostapd.te \
-	init_shell.te \
-	init.te \
-	libqc-opt.te \
-	mediaserver.te \
-	mpdecision.te \
-	netd.te \
-	netmgrd.te \
-	nfc.te \
-	property_contexts \
-	property.te \
-	qcom.te \
-	qmux.te \
-	radio.te \
-	rild.te \
-	rmt.te \
-	sdcard_internal.te \
-	sdcardd.te \
-	sensors.te \
-	shell.te \
-	su.te \
-	surfaceflinger.te \
-	system_server.te \
-	tee.te \
-	te_macros \
-	thermald.te \
-	ueventd.te \
-	vold.te \
-	wpa_supplicant.te \
-	zygote.te
-
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
@@ -224,3 +176,19 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
+
+# Selinux
+BOARD_SEPOLICY_DIRS += \
+    device/samsung/n8000/selinux
+
+BOARD_SEPOLICY_UNION += \
+    device.te \
+    domain.te \
+    file.te \
+    file_contexts \
+    init.te \
+    mediaserver.te \
+    rild.te \
+    system.te \
+    ueventd.te \
+    wpa_supplicant.te
