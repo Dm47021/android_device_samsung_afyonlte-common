@@ -82,6 +82,10 @@ TARGET_NO_INITLOGO := true
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
 
+# FM
+AUDIO_FEATURE_ENABLED_FM := true
+TARGET_QCOM_NO_FM_FIRMWARE := true
+
 WLAN_MODULES:
 	mkdir -p $(KERNEL_MODULES_OUT)/pronto
 	mv $(KERNEL_MODULES_OUT)/wlan.ko $(KERNEL_MODULES_OUT)/pronto/pronto_wlan.ko
