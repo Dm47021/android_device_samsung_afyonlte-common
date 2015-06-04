@@ -78,7 +78,7 @@ BOARD_HARDWARE_CLASS += device/samsung/afyonlte-common/cmhw
 BOARD_EGL_CFG := device/samsung/afyonlte-common/configs/egl.cfg
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 # OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
-TARGET_QCOM_DISPLAY_VARIANT := caf-new
+TARGET_QCOM_DISPLAY_VARIANT := caf
 # TARGET_DISPLAY_USE_RETIRE_FENCE := false
 TARGET_NO_INITLOGO := true
 
