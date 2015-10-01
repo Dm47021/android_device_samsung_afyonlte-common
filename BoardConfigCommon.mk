@@ -179,7 +179,7 @@ endif
 
 # Selinux
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/n8000/selinux
+    device/samsung/afyonlte-common/selinux
 
 BOARD_SEPOLICY_UNION += \
     device.te \
