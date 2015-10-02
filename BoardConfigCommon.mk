@@ -192,3 +192,6 @@ BOARD_SEPOLICY_UNION += \
     system.te \
     ueventd.te \
     wpa_supplicant.te
+
+PRODUCT_PACKAGES += \
+    gps.msm8226
